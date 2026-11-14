@@ -17,6 +17,7 @@ class ImageComponent extends HTMLElement {
   }
 
   render() {
+    this.shadowRoot.replaceChildren();
     const div = document.createElement("div");
     div.innerHTML = `
     <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}">
@@ -28,10 +29,14 @@ class ImageComponent extends HTMLElement {
       }
 
       img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
       }
 
       sub {
+        display: block;
+        margin-top: 8px;
         font-size: 1rem;
         font-style: italic;
       }

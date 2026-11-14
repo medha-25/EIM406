@@ -1,18 +1,31 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-family: var(--sl-font-sans);
-}
+html { scroll-behavior: smooth; }
+body { margin: 0; font-size: 16px; font-family: var(--sl-font-sans, Arial, sans-serif); line-height: 1.65; }
+.content { max-width: 860px; margin: 0 auto; padding: 48px 28px 96px; }
+h1 { line-height: 1.2; }
+h2, h3, h4 { line-height: 1.35; scroll-margin-top: 24px; }
+p { text-align: justify; font-size: 1.05rem; }
+.hypothesis-statement { text-align: center; max-width: 720px; margin: 1.5rem auto; }
+.table-of-content a { overflow-wrap: anywhere; }
+.references li { margin-bottom: 12px; overflow-wrap: anywhere; }
+image-component { display: block; max-width: 100%; margin: 24px auto; }
+#table-1 { overflow-x: auto; text-align: left; }
+@media (max-width: 600px) { .content { padding: 24px 16px 80px; } h1 { font-size: 1.8rem; } p { font-size: 1rem; } }
 
-.content {
-  max-width: 800px;
-  margin: auto;
-  padding: 10%;
-}
-
-p {
-  text-align: justify;
-  font-size: 1.1rem;
+/* Compact, fully wrapping timeline table */
+#table-1 { width: 100%; max-width: 100%; overflow-x: hidden; }
+#table-1 .gridjs-container, #table-1 .gridjs-wrapper { width: 100%; min-width: 0; max-width: 100%; box-sizing: border-box; }
+#table-1 .gridjs-wrapper { overflow-x: hidden; }
+#table-1 .gridjs-table { width: 100%; min-width: 0; table-layout: fixed; border-collapse: collapse; }
+#table-1 .gridjs-th, #table-1 .gridjs-td { white-space: normal; overflow-wrap: anywhere; padding: 8px 10px; font-size: 0.9rem; line-height: 1.45; vertical-align: top; }
+#table-1 .gridjs-th:first-child, #table-1 .gridjs-td:first-child { width: 22%; }
+#table-1 .gridjs-th:last-child, #table-1 .gridjs-td:last-child { width: 78%; }
+#table-1 .timeline-tasks { margin: 0; padding-left: 1.15rem; list-style-type: disc; }
+#table-1 .timeline-tasks li { margin: 0 0 4px; }
+#table-1 .timeline-tasks li:last-child { margin-bottom: 0; }
+/* Figure 4 only: keep the other figures at their original sizes. */
+image-component.figure-4 { width: 100%; max-width: 520px; }
+@media (max-width: 600px) {
+  #table-1 .gridjs-th, #table-1 .gridjs-td { padding: 6px; font-size: 0.8rem; }
+  #table-1 .timeline-tasks { padding-left: 0.95rem; }
+  image-component.figure-4 { max-width: 100%; }
 }

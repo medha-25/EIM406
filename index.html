@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>EIM-406: Cooling the Brain</title>
+  
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
   <script type="module"
@@ -28,27 +28,21 @@
   <link rel="stylesheet" href="./components/scroll-to-top/scroll-to-top.css">
   <script src="./components/scroll-to-top/scroll-to-top.js"></script>
 
-  <script src="./components/table-component/table-component.js"></script>
+
+  <script defer src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script defer src="./components/table-component/table-component.js"></script>
 
   <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 </head>
 
 <body>
   <div class="content">
-    <h1>Project Title</h1>
+    <h1>EIM-406: Cooling the Brain</h1>
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Black" department="Mechanical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Yellow" department="Computer Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/redranger.png" name="Red" department="Electrical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/pinkranger.png" name="Pink" department="Biomedical Engineering"
-        year="1993"></team-member>
-      <team-member avatar="assets/blueranger.png" name="Blue" department="Chemical Engineering"
-        year="1993"></team-member>
+      <team-member avatar="assets/profile_pic.jpg" name="Medha Singhal" department="Mechanical Engineering"
+        year="2023"></team-member>
     </div>
 
     <!-- This is a divide from the shoelace library for aesthetic purpose -->
@@ -59,162 +53,488 @@
       <h2>Table of Contents</h2>
       <sl-tree>
         <sl-tree-item expanded>
-          <a href="#section-header-1">1. Section Header 1</a>
+          <a href="#Abstract">1. Abstract</a>
+        </sl-tree-item>
+        
+        <sl-tree-item expanded>
+          <a href="#Introduction">2. Introduction</a>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#literature-review">3. Literature Review</a>
           <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
+            <a href="#Lit-section-1">3.1. Wearable and Targeted Cooling Technologies</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-1-header-2">1.2. Sub-section Header 2</a>
+            <a href="#Lit-section-2">3.2. Localised Cooling using Thermoelectric Technology</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#Lit-section-3">3.3. Identified Research Gap</a>
           </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#section-header-2">2. Section Header 1</a>
+          <a href="#section-4">4. Research Questions, Hypothesis and Scope</a>
+        </sl-tree-item>
+
+        <sl-tree-item expanded>
+          <a href="#section-5">5. Research Methodology and Preliminary Outcomes</a>
           <sl-tree-item>
-            <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
+            <a href="#section-5-header-1">5.1. Surface cooling characterization</a>
+          </sl-tree-item>
+          <sl-tree-item expanded>
+            <a href="#section-5-header-2">5.2 Physical thermal phantom</a>
+            <sl-tree-item>
+              <a href="#section-5-sub-section1">5.2.1 Existing Tissue-Mimicking Phantoms</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-5-sub-section2">5.2.2 Thermally Representative Phantoms</a>
+            </sl-tree-item>
+            <sl-tree-item>
+              <a href="#section-5-sub-section3">5.2.3 Proposed Hydrogel-based Thermal Phantom</a>
+            </sl-tree-item>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-2-header-2">2.2. Sub-section Header 2</a>
+            <a href="#section-5-header-3">5.3 Numerical thermal modelling</a>
           </sl-tree-item>
         </sl-tree-item>
 
+        <sl-tree-item expanded>
+          <a href="#section-6">6. Future Work and Conclusion</a>
+        </sl-tree-item>
+
         <sl-tree-item>
-          <a href="#references">References</a>
+          <a href="#references">7. Bibliography</a>
         </sl-tree-item>
       </sl-tree>
     </div>
     <sl-divider></sl-divider>
 
     <div>
-
       <!-- This is an example of what a section might look like -->
-      <div id="section-header-1">
-        <h2> 1. Section Header 1 </h2>
+      <div id="Abstract">
+        <h2> 1. Abstract </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna
-          aliqua. Tincidunt ornare massa eget egestas. At tellus at urna condimentum mattis pellentesque id nibh tortor.
-          Elementum sagittis vitae et leo duis ut diam. Morbi tristique senectus et netus et malesuada fames.
-          Suspendisse
-          ultrices gravida dictum fusce ut placerat orci. Risus nullam eget felis eget nunc lobortis mattis aliquam
-          faucibus
-          (Brody, 2007). Eget sit amet tellus cras adipiscing enim eu turpis egestas. Aliquet nibh praesent tristique
-          magna
-          sit amet purus. Adipiscing bibendum est ultricies integer quis auctor elit sed. Fermentum et sollicitudin ac
-          orci
-          phasellus egestas tellus rutrum. At in tellus integer feugiat scelerisque varius morbi enim nunc. Volutpat
-          blandit
-          aliquam etiam erat velit scelerisque in. Id diam maecenas ultricies mi eget mauris pharetra et. Nec dui nunc
-          mattis
-          enim ut tellus elementum sagittis vitae.
+          Heat-related illnesses pose increasing health risks, highlighting the need for effective cooling strategies. 
+          This project investigates the effects of localised surface cooling on heat transfer and internal temperature reduction 
+          within the head and neck. Three complementary methodologies are proposed: Peltier-based cooling experiments, physical 
+          thermal phantom testing, and numerical thermal modelling using ANSYS. Preliminary work includes developing a temperature 
+          control system, selecting a suitable hydrogel for phantom construction, and exploring steady-state thermal simulations. 
+          Subsequent investigations will evaluate the influence of cooling location, intensity, and duration on temperature responses, 
+          providing insights to inform the future development of targeted cooling systems.
         </p>
-      </div>
-
-      <div id="sub-section-1-header-1">
-        <h3>1.1 Sub-section Header 1</h3>
-        <p>
-          Ultrices dui sapien eget mi. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Dolor purus non enim
-          praesent elementum facilisis. Lacus vestibulum sed arcu non odio euismod lacinia at. Metus aliquam eleifend mi
-          in nulla. Lacus sed viverra tellus in hac habitasse platea. Varius quam quisque id diam vel quam elementum
-          pulvinar. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Diam ut venenatis tellus in metus
-          vulputate. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Venenatis lectus magna
-          fringilla
-          urna. In nisl nisi scelerisque eu ultrices. Velit egestas dui id ornare arcu odio ut sem nulla. Quam id leo in
-          vitae. Egestas congue quisque egestas diam in arcu cursus euismod quis. Porttitor leo a diam sollicitudin
-          tempor
-          id eu nisl.
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-2">
-        <h3>1.2 Sub-section Header 2</h3>
-        <p>
-          Fermentum dui faucibus in ornare quam viverra orci. Donec ultrices tincidunt arcu non sodales. A diam maecenas
-          sed enim ut sem viverra. Semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis. Auctor
-          augue mauris augue neque gravida in fermentum et. Auctor elit sed vulputate mi sit amet. Maecenas pharetra
-          convallis posuere morbi leo urna. Sem nulla pharetra diam sit amet nisl. Id nibh tortor id aliquet lectus.
-          Nibh
-          nisl condimentum id venenatis a condimentum vitae sapien. Convallis posuere morbi leo urna molestie at
-          elementum.
-        </p>
-
-        <!-- This is an example of how you might use the image component -->
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
       </div>
     </div>
 
-
-    <br />
     <br />
     <sl-divider></sl-divider>
-    <div>
-      <div id="section-header-2">
-        <h2>2. Section Header 2</h2>
+    <div id="Introduction">
+      <h2>2. Introduction</h2>
+      <p>
+        The frequency and intensity of extreme heat and heat waves are increasing in the 21st century due to climate change. Between 
+        2000 and 2019, approximately 489,000 heat-related deaths occurred annually, of which 45% were in Asia. [1] A study by Adjunct 
+        Assistant Professor Joel Aik from Duke-NUS Medical School reported approximately 40 outdoor workers suffered from heat-related 
+        illnesses in Singapore between 2009 and 2023. Of these, approximately 85% experienced severe heat-related illnesses, including 
+        heat exhaustion and heat stroke. [2] These figures may be underreported, as workers with milder heat-related illnesses are 
+        less likely to seek medical attention.
+      </p>
+      <p>
+        Heat-related illnesses encompass conditions arising from impaired thermoregulation. Heat stroke is characterised by a core 
+        body temperature exceeding 40 °C, accompanied by central nervous system dysfunction such as delirium, reduced consciousness, 
+        or ataxia. [3] High ambient temperatures, humidity, low wind speeds, and restrictive clothing can impede heat dissipation, 
+        increasing the risk of heat exhaustion and heat stroke. [1] 
+      </p>
+      <p>
+        The preoptic area of the hypothalamus plays a central role in the body's thermoregulation. It receives temperature information 
+        from peripheral and central thermoreceptors and activates thermoregulatory responses to maintain thermal homeostasis, typically 
+        within a core body temperature range of 36–38 °C. [4] For heat transfer analysis, the human body can be divided into two thermal 
+        regions: the core and the shell. The core comprises deeper body tissues, where most metabolic heat is generated, while the shell 
+        consists of the skin and subcutaneous tissues, through which heat is dissipated to the environment. Since heat accumulation can 
+        increase core body temperature and contribute to heat-related illnesses, cooling the body's surface is one approach to promoting 
+        heat dissipation. In clinical settings, cooling methods include evaporative and conductive cooling, as well as invasive 
+        techniques. Common examples include ice-water immersion, ice packs, cooling blankets, and iced lavage. [5] 
+      </p>
+      <p>
+        The risks associated with heat stroke, particularly during strenuous activity in hot and humid environments such as Singapore, 
+        motivate the development of preventive cooling systems capable of detecting elevated core body temperatures and delivering 
+        targeted cooling. However, understanding how localised surface cooling affects heat transfer and temperature reduction in 
+        deeper tissues is essential before such systems can be developed. By characterising these thermal responses, this research 
+        aims to provide a foundation for the development of targeted cooling strategies, contributing to future heat-stress mitigation 
+        efforts and improved resilience to rising environmental temperatures.
+      </p>
+    </div>
+
+    <br />
+    <sl-divider></sl-divider>
+    <div id="literature-review">
+      <h2>3. Literature Review</h2>
         <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
+          There are three main cooling mechanisms: evaporative cooling, contact cooling, and active cooling techniques such as 
+          thermoelectric cooling. Evaporative cooling removes heat through the evaporation of a liquid from a surface, while contact 
+          cooling involves heat transfer through direct contact with a colder medium. Thermoelectric cooling utilises the Peltier effect, 
+          in which an electric current drives heat transfer between the cold and hot sides of a thermoelectric module. This technology is 
+          often combined with phase-change materials (PCMs), which absorb or release significant amounts of heat during phase transitions, 
+          making them suitable for thermal energy storage and heat management. 
         </p>
-      </div>
+        <div id="Lit-section-1">
+          <h3>3.1. Wearable and Targeted Cooling Technologies</h3>
+          <p>
+            Hamazaki et al. developed AlCool, a wrist-worn device that utilises evaporative cooling to provide a cooling sensation. 
+            Alcohol is sprayed onto the wrist, while a fan directed at the sprayed region facilitates evaporation. The device provided a 
+            cooling sensation lasting approximately 30 minutes, after which the alcohol had to be reapplied to restore the cooling intensity. [6]
+          </p>
+          <p>
+            Wang et al. developed a cooling vest using ice as a phase-change material due to its low cost and high latent heat. To address 
+            concerns regarding leakage and deformation, they designed a multilayer garment comprising a radiation layer, insulation layer, 
+            cooling layer, metal wire fabric, and slow-release heat absorption layer. Testing in an artificial climate chamber demonstrated 
+            a reduction of 2.4 °C in average skin temperature at an average cooling rate of 0.04 °C/min, alongside a 0.4 °C reduction in 
+            core body temperature. The final core body temperature stabilised at 38 °C, which is 0.5 °C below the threshold for mild heat 
+            stroke conditions stated in the study. [7] This is one of the few studies reviewed that reports the effect of surface cooling on 
+            core body temperature. 
+          </p>
+          <p>
+            Al-Rjoub et al. developed a head cooling device using ice as a phase-change material for thermal storage, intended for 
+            applications such as firefighting, mining, and construction. Water circulates through the system, removing heat from the 
+            simulated head and transferring it to an ice-based heat exchanger. The device provided active cooling for 1.5 hours under 
+            simulated exercise conditions and 3 hours under resting conditions. [8] Although the study highlights the potential of head 
+            cooling to facilitate rapid brain cooling during thermal stress, it does not quantitatively report the temperature reduction 
+            achieved.
+          </p>
+          <p>
+            Localised cooling has also been investigated for temperature management in patients with traumatic brain injury. Lavinio et 
+            al. developed an external cervical cooling device for selective brain temperature management. The device consists of a 
+            polymeric neck collar containing pouches filled with distilled water, which form the heat exchange interface. The study 
+            focused on developing a portable device suitable for out-of-hospital use and evaluating the effects of cervical cooling on 
+            venous obstruction and intracranial hypertension. The researchers reported a 29.85% reduction in the brain-core temperature 
+            gradient in the cooling group compared with the non-cooling group. [9] This was one of the few studies reviewed that assessed 
+            the brain-core temperature differential. 
+          </p>
+        </div>
+        <div id="Lit-section-2">
+          <h3>3.2. Localised Cooling using Thermoelectric Technology</h3>
+            <p>
+              Ding et al. developed a flexible phase-change material thermoelectric device (FPCM-TED) in the form of a wristband to provide 
+              localised cooling in indoor environments. The PCM combines paraffin and graphene with silicone rubber, allowing a bending 
+              radius of 20 mm while maintaining stable performance. The device reduced surface body temperature by 11.21 °C within 30 seconds 
+              and maintained the thermoelectric device in a cooled state for at least 300 seconds. [10]
+            </p>
+            <p>
+              Cao et al. developed a headband for personal thermal regulation using a flexible phase-change material. Copper foam was used 
+              as the structural framework, combined with a ternary composite PCM comprising paraffin, styrene-butadiene-styrene (SBS), and 
+              carbon nanotubes. The flexible PCM achieved a thermal conductivity of 4.92 W/(m·K) and a bending radius of 15 mm. The device 
+              was complemented by an application for remote temperature regulation and could maintain the forehead temperature at 32 °C 
+              across an ambient temperature range of 5-40 °C. Overall, the device demonstrated a stable temperature reduction of 17 °C for 
+              6 hours. [11]
+            </p>
+            <p>
+              In addition to PCM-based systems, Mujib et al. developed a wearable head cooling device comprising two Peltier modules, two 
+              temperature feedback sensors, two fans, and a heat sink. Powered by a 12 V DC battery and controlled using an Arduino UNO 
+              microcontroller, the device provided surface cooling to the forehead region. When the measured temperature exceeded a 
+              predefined setpoint, the Peltier modules were activated for 3 minutes before being switched off for 10 minutes. The device 
+              was evaluated using usability and stress questionnaires, alongside electroencephalography (EEG) measurements to investigate 
+              brain activity and the potential effects of cooling on relaxation and heat-related stress. [12]
+            </p>
+            <p>
+              Thermoelectric cooling modules have also been integrated with highly thermally conductive thin fins and hydrogel in a 
+              cooling helmet design. The fins and hydrogel are arranged radially between the head and the cold surface of the TEC module 
+              to facilitate heat transfer across curved and irregular surfaces. The metallic fins provide high thermal conductivity to 
+              distribute heat, while the hydrogel's high water content provides high heat capacity and flexibility, reducing thermal 
+              resistance caused by air gaps. [13]
+            </p>
+        </div>
+        <div id="Lit-section-3">
+          <h3>3.3. Identified Research Gap</h3>
+          <p>
+            Based on the studies reviewed, evaluations of localised cooling have primarily focused on surface temperature reduction, 
+            thermal perception, and physiological responses such as EEG measurements. Although some studies report changes in core 
+            temperature or brain-core temperature gradients, systematic investigations of internal heat transfer under varying cooling 
+            locations, intensities, and durations remain less extensively investigated. 
+          </p>
+        </div> 
+ 
+    </div>
 
-      <div id="sub-section-2-header-1">
-        <h3>2.1. Sub-section Header 1</h3>
+    <br />
+    <sl-divider></sl-divider>
+    <div id="section-4">
+      <h2>4. Research Questions, Hypothesis and Scope</h2>
         <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          This study focuses on the head and neck due to their physiological relevance to thermoregulation and potential for targeted 
+          cooling. The hypothalamus, located within the brain, serves as the body's thermoregulatory centre. Additionally, Lavinio et al. 
+          [9] investigated cervical cooling, highlighting the proximity of the carotid arteries to the skin and their role in cerebral 
+          blood supply. Luo et al. [14] also identified the cheek and posterior neck as regions with high sensitivity to cooling. 
+          Although thermal sensitivity does not necessarily indicate greater internal temperature reduction, these findings provide a 
+          basis for investigating cooling effectiveness across different head and neck locations. 
         </p>
-
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
-      </div>
-
-      <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+          Based on these findings, the two main research questions for this project are:
+        </p>
+        <ol>
+          <li>How does localised surface cooling influence heat transfer and temperature distribution within the head and neck? </li>
+          <li>How do cooling location, intensity, and duration influence internal temperature reduction?</li>
+        </ol>
+        <p>
+          The first question investigates heat transfer from deeper tissues towards a cooled surface, while the second examines how 
+          cooling location, intensity, and duration affect internal temperature responses. Together, these questions support the 
+          following hypothesis: 
+        </p>
+        <p class="hypothesis-statement">
+          <em>“Localised surface cooling can reduce internal tissue temperatures, with cooling effectiveness influenced by the 
+            location, intensity, and duration of cooling.”</em>
+        </p>
+        <p>
+          This project aims to characterise internal heat transfer under localised cooling conditions rather than develop a complete 
+          wearable cooling device. The focus is on understanding heat transfer between the surface and deeper tissues, rather than 
+          developing methods to measure core body temperature. Testing on human subjects under extreme heat stroke conditions will not 
+          be conducted due to ethical and safety concerns. Consequently, clinical validation of cooling techniques for heat stroke 
+          prevention is beyond the scope of this project.
+        </p>
+    </div> 
+
+    <br />
+    <sl-divider></sl-divider>
+    <div id="section-5">
+      <h2>5. Research Methodology and Preliminary Outcomes</h2>
+        <p>
+          Three complementary approaches have been selected to investigate the research hypothesis. First, active Peltier-based cooling 
+          will be used to apply localised surface cooling under controlled conditions. Experiments will compare cooling effectiveness 
+          across different locations while evaluating the effects of cooling intensity and duration. Second, numerical thermal modelling 
+          will be conducted using ANSYS to simulate these cooling conditions and visualise internal heat transfer. The numerical 
+          predictions will subsequently be compared with experimental observations. Finally, since human testing under extreme heat 
+          stroke conditions is beyond the project's scope, a physical thermal phantom will be developed to replicate selected thermal 
+          properties of human tissues. This will enable controlled investigations of heat transfer mechanisms and internal temperature 
+          responses.
+        </p>
+        <div id="section-5-header-1">
+          <h3>5.1. Surface cooling characterization</h3>
+            <p>
+              To evaluate the effects of cooling location, intensity, and duration, an experiment was designed using Peltier modules. 
+              These were selected for their ability to actively regulate cooling conditions, making them suitable for controlled and 
+              repeatable experiments. Their established use in cooling applications, availability in different sizes, and greater 
+              temperature control compared with passive cooling methods such as ice packs further supported their selection.
+            </p>
+
+            <!-- Figure -->
+
+            <image-component tag="image" source="assets/pid control graphs.png"
+                subtitle="Figure 1: PID control of Peltier module"></image-component>
+            <p>
+             The ability of a Peltier module to maintain a stable temperature setpoint using closed-loop feedback control was initially 
+             evaluated with a proportional–integral–derivative (PID) controller. However, the trial-and-error approach used to tune the 
+             PID parameters produced noisy and occasionally unstable temperature responses. Consequently, the control system was 
+             simplified to on–off control, in which the Peltier module is activated when the measured temperature exceeds the setpoint 
+             and deactivated when it falls below it. The experimental setup consisted of a Peltier module with an attached heat sink, an 
+             H-bridge driver, an Arduino UNO microcontroller, and a thermocouple with an amplifier unit. 
+            </p>
+
+            <!-- Figure -->
+
+            <image-component tag="image" source="assets/electronics setup.png"
+                subtitle="Figure 2: Electronics control system for experiment"></image-component>
+            <p>
+              Based on the approximate bilateral symmetry of the human head and neck, five regions were selected for the experiment: the 
+              mid-forehead (frontal), right cheek, right temporal region, right lateral neck, and posterior neck (midline). The cheek and 
+              posterior neck were selected due to their high sensitivity to cooling, as reported by Luo et al. [14] The lateral neck was 
+              included to further investigate the potential influence of cooling near the carotid arteries, as discussed by Lavinio et al. 
+              [9] The forehead and temporal regions were selected as additional cooling locations on the head while minimising hair as a 
+              potential variable.
+            </p>
+            <p>
+              During the experiment, the baseline skin surface temperature of each participant will be recorded before cooling is applied. 
+              The cooling temperature setpoints will be defined as 5 °C and 10 °C below the baseline temperature to evaluate the effect of 
+              cooling intensity. These temperature differences were selected to produce distinguishable cooling responses, as the applied 
+              cooling temperature may not directly correspond to the resulting skin temperature. Cooling will be applied for 90 seconds, with 
+              surface temperature recorded before, during, and after the cooling period. Subsequent experiments will investigate different 
+              cooling durations to evaluate their influence on surface temperature responses and cooling effectiveness. The resulting 
+              temperature-time responses and cooling rates will be analysed to investigate the effects of cooling duration. The experimental 
+              design was informed by the thermal sensitivity study conducted by Luo et al. [14]
+            </p>
+        </div>
+        <div id="section-5-header-2">
+          <h3>5.2 Physical thermal phantom</h3>
+            <p>
+              Physical phantoms are commonly used to replicate selected properties of human tissues for experimental investigations. Human head 
+              phantoms are often designed to simulate electrical properties, particularly for applications involving magnetic resonance imaging 
+              (MRI).
+            </p>
+            <div id="section-5-sub-section1">
+              <h4>5.2.1 Existing Tissue-Mimicking Phantoms</h4>
+                <p>
+                 Stauffer et al. developed a multilayer tissue phantom for microwave radiometry testing. They analysed a human brain computed 
+                 tomography (CT) dataset using tissue segmentation software to determine the thicknesses of the scalp, skull, and brain tissues. 
+                 An artificial human skull with geometry and dielectric properties similar to those of human skull bone was selected and filled 
+                 with a mixture of ethylene glycol, water, and NaCl to replicate the electrical properties of mixed grey and white matter. A sealed 
+                 compartment containing temperature-controlled distilled water was also placed against the outer surface to maintain a stable scalp 
+                 temperature. [15] 
+                </p>
+                <p>
+                  Graedel et al. developed an anatomically realistic phantom for radiofrequency heating measurements using geometric data 
+                  obtained from 1 mm isotropic T1-weighted magnetic resonance (MR) images of a human head to generate a computer-aided design 
+                  (CAD) model. Highly conductive compartments were filled with tissue-mimicking materials, including agar gel, to minimise 
+                  convection in heated liquids. Other compartments contained mixtures of agar, salt, sodium azide, polyethylene powder, and 
+                  deionised water in varying proportions to replicate tissue dielectric properties. [16]
+                </p>
+                <p>
+                  Although these studies provide useful references for the geometric characteristics of head phantoms, their primary focus on 
+                  dielectric properties makes them less directly applicable to the present investigation. Other phantom models have been 
+                  developed specifically to replicate aspects of human thermoregulation, although they do not necessarily reproduce the 
+                  anatomical geometry of the human head.
+                </p>
+            </div>
+            <div id="section-5-sub-section2">
+              <h4>5.2.2 Thermally Representative Phantoms</h4>
+                <p>
+                  Van den Bossche et al. developed an agar-gel block comprising deionised water, glycerol, and agar to replicate the 
+                  average thermal conductivity, density, and specific heat capacity of human tissue. The thermal properties of fat tissue 
+                  were represented using an ethyl cellulose-gel block. A water circulation system was embedded within the model to simulate 
+                  metabolic heat production, alongside a superficial circulation system to facilitate convective heat exchange with the 
+                  surrounding environment. A sweating system was also incorporated to enhance heat exchange with ambient air, while the gel 
+                  blocks were wrapped in PVC foil to minimise water evaporation. [17]
+                </p>
+                <p>
+                  The initial objective of this project is to investigate heat transfer primarily through conduction, with convective 
+                  mechanisms to be incorporated in later stages. Therefore, the complexity of the phantom developed by Van den Bossche 
+                  et al. makes it less suitable as a starting point. In comparison, the brain phantom developed by Packett et al. for 
+                  therapeutic cooling devices provides a simpler approach that better aligns with the project's objectives. Their model 
+                  used a potassium-neutralised superabsorbent copolymer (SAP) of acrylic acid and acrylamide to form a water-based 
+                  hydrogel. The selection of this material was based on the approximation that the density, thermal conductivity, and 
+                  specific heat capacity of blood and grey matter are within 20% of those of water at 37 °C, owing to their high-water 
+                  content. Blood perfusion was simulated using non-directional flow by circulating temperature-controlled water through 
+                  a container filled with swollen hydrogel crystals. [18]
+                </p>
+
+                <!-- Figure -->
+
+                <image-component tag="image" source="assets/thermal phantom.png"
+                    subtitle="Figure 3: Thermal Phantom by Packett et al."></image-component>
+            </div>
+            <div id="section-5-sub-section3">
+              <h4>5.2.3 Proposed Hydrogel-based Thermal Phantom</h4>
+                <p>
+                  Since the SAP used by Packett et al. is a proprietary product, poly(acrylamide-co-acrylic acid) potassium salt was 
+                  selected as the hydrogel material for the proposed thermal phantom. This cross-linked superabsorbent copolymer forms 
+                  discrete swollen crystals when soaked in water. Its selection was guided by its similarity to the material used in 
+                  [18] and its potential to accommodate simplified blood perfusion in later stages of testing. The experimental setup 
+                  will consist of a container filled with swollen hydrogel crystals, with thermocouples positioned at 2 cm depth 
+                  intervals. Surface cooling will be applied to the exposed upper layer, and temperature measurements will be used to 
+                  characterise heat transfer through spatial temperature gradients. These results will subsequently be compared with 
+                  numerical predictions from ANSYS.
+                </p>
+            </div>
+        </div>
+        <div id="section-5-header-3">
+          <h3>5.3 Numerical thermal modelling</h3>
+            <p>
+              Numerical thermal modelling using ANSYS aims to visualise and predict heat transfer and internal temperature reduction 
+              within the head. For this purpose, a mesh of a human head and neck model was generated in the software. Water at 37 °C was 
+              assigned as the model material based on the literature on thermal phantoms. Localised surface cooling will be applied at 
+              the previously identified cooling locations. Simulating conditions comparable to those used in the experiments will enable 
+              the numerical predictions to be compared with experimental measurements for further analysis.
+            </p>
+
+            <!-- Figure -->
+
+            <image-component class="figure-4" tag="image" source="assets/ansys simulation.png"
+                  subtitle="Figure 4: Example of ANSYS temperature distribution visualisation"></image-component>
+            <p>
+              Initial exploration of ANSYS steady-state thermal modelling demonstrated that applying localised surface cooling to the 
+              forehead can produce results such as temperature distributions, total heat flux, directional heat flux along the three 
+              coordinate axes, and temperature profiles along predefined paths extending approximately 30 mm from the surface. The 
+              temperature profiles are particularly useful for comparison with the spatial temperature gradients obtained from the 
+              thermal phantom experiments. Following refinement of the steady-state model and its boundary conditions, transient thermal 
+              simulations will be conducted to investigate temperature changes over time under different cooling durations.
+            </p>
+        </div>
+    </div>
+
+    <br />
+    <sl-divider></sl-divider>
+    <div id="section-6">
+      <h2>6. Future Work and Conclusion</h2>
+        <p>
+          Future work will focus on implementing and refining the three proposed methodologies. Peltier-based cooling experiments will 
+          be conducted at the five selected head and neck locations, with cooling intensity and duration varied to evaluate their effects 
+          on surface temperature responses. A hydrogel-based thermal phantom testing set-up will be constructed to investigate internal 
+          temperature distributions and spatial gradients under controlled cooling conditions. Numerical modelling will involve refining 
+          the steady-state model with more realistic boundary conditions, followed by transient simulations to investigate time-dependent 
+          heat transfer. Experimental measurements will subsequently be compared with numerical predictions to assess the model's 
+          performance.
         </p>
 
         <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
+        <table-component subtitle="Table 1: Timeline">
           <div id="table-1"></div>
         </table-component>
-      </div>
+
+        <p>
+          Overall, this project aims to characterise the effects of localised surface cooling on internal heat transfer through 
+          complementary experimental and numerical approaches. The findings are expected to provide a foundation for evaluating cooling 
+          effectiveness and informing the future development of targeted cooling systems.
+        </p>
     </div>
 
     <!-- This is an example of how you can use the references component to create references -->
     <div id="references" class="references">
       <sl-divider></sl-divider>
-      <h2>References</h2>
-      <ul>
+      <h2>7. Bibliography</h2>
+      <ol>
         <li>
-          Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times. Retrieved from
-          http://www.dowjones.com/factiva/
+          ‘Heat and health’. Accessed: Oct. 25, 2026. [Online]. Available: <a href="https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health" target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/climate-change-heat-and-health</a>
         </li>
         <li>
-          Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational
-          health psychologists convene to share their research on work, stress, and health. Monitor on Psychology,
-          39(5), 26-29.
+          ‘Just 1 deg C hotter but outdoor workers’ heat stroke risk spikes 250%: S’pore study’, The Straits Times, Singapore, Mar. 27, 
+          2026. Accessed: Nov. 10, 2026. [Online]. Available: 
+          <a href="https://www.straitstimes.com/singapore/environment/a-1-deg-c-rise-in-daily-temperatures-more-than-doubles-the-danger-for-outdoor-workers-spore-study" target="_blank" rel="noopener noreferrer">https://www.straitstimes.com/singapore/environment/a-1-deg-c-rise-in-daily-temperatures-more-than-doubles-the-danger-for-outdoor-workers-spore-study</a>
         </li>
         <li>
-          Jones, T. J., & Fields, N. (2003). Emotional quotient and personality. E-Journal of Applied Psychology, 2(2),
-          38-45. Retrieved from http://ejournalappliedpsyc/index.php/ejap
+          D. D. Wasserman, R. Kathard, and M. Healy, ‘Cooling Techniques for Hyperthermia’, in StatPearls, Treasure Island (FL): StatPearls Publishing, 2025. Accessed: Oct. 24, 2026. [Online]. Available: <a href="http://www.ncbi.nlm.nih.gov/books/NBK459311/" target="_blank" rel="noopener noreferrer">http://www.ncbi.nlm.nih.gov/books/NBK459311/</a>
         </li>
-      </ul>
+        <li>
+          E. V. Osilla, J. L. Marsidi, K. R. Shumway, and S. Sharma, ‘Physiology, Temperature Regulation’, in StatPearls, Treasure Island (FL): StatPearls Publishing, 2023. Accessed: Oct. 25, 2026. [Online]. Available: <a href="http://www.ncbi.nlm.nih.gov/books/NBK507838/" target="_blank" rel="noopener noreferrer">http://www.ncbi.nlm.nih.gov/books/NBK507838/</a>
+        </li>
+        <li>
+          E. Hadad, M. Rav-Acha, Y. Heled, Y. Epstein, and D. S. Moran, ‘Heat stroke : a review of cooling methods’, Sports Med., vol. 34, no. 8, pp. 501–511, 2004, doi: 10.2165/00007256-200434080-00002.
+        </li>
+        <li>
+          T. Hamazaki et al., ‘ALCool: Utilizing Alcohol’s Evaporative Cooling for Ubiquitous Cold Sensation Feedback’, in Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems, in ACM Conferences. , 2024, pp. 1–14. doi: 10.1145/3613904.3642113.
+        </li>
+        <li>
+          S. Wang, X. Gui, T. Liu, Y. Huang, and L. Ding, ‘Experimental study on a novel phase change cooling garment to improve the thermal comfort of live-line workers’, Int. J. Ind. Ergon., vol. 108, p. 103774, Jul. 2025, doi: 10.1016/j.ergon.2025.103774.
+        </li>
+        <li>
+          M. Al-Rjoub et al., ‘Better thermoregulation of brain temperature using phase change material-mediated head cooling system’, Int. J. Heat Mass Transf., vol. 173, p. 121204, Jul. 2021, doi: 10.1016/j.ijheatmasstransfer.2021.121204.
+        </li>
+        <li>
+          A. Lavinio, E. Beqiri, and K. Kataria, ‘A Novel Technology for Targeted Brain Temperature Management’, Neurocrit. Care, vol. 40, no. 2, pp. 785–790, Apr. 2024, doi: 10.1007/s12028-023-01800-7.
+        </li>
+        <li>
+          Q. Ding et al., ‘Long-Lasting Heat Dissipation of Flexible Heat Sinks for Wearable Thermoelectric Devices’, ACS Appl. Mater. Interfaces, vol. 16, no. 24, pp. 31228–31236, Jun. 2024, doi: 10.1021/acsami.4c06761.
+        </li>
+        <li>
+          L. Cao et al., ‘Phase change composite-enabled flexible thermoelectric cooling for personal thermal-regulation’, J. Energy Storage, vol. 105, p. 114757, Jan. 2025, doi: 10.1016/j.est.2024.114757.
+        </li>
+        <li>
+          M. D. Mujib, A. Z. Rao, M. A. Hasan, A. Ikhlaq, S. A. Buzdar, and S. A. Qazi, ‘Frontal cortex cooling and modulation of brain frequencies using a wearable Peltier device’, Phys. B Condens. Matter, vol. 652, p. 414641, Mar. 2023, doi: 10.1016/j.physb.2023.414641.
+        </li>
+        <li>
+          Z. Tian and J. Xu, ‘Design, simulation and experimental verification of heat transfer structure in thermoelectric cooling helmets’, E3S Web Conf., vol. 233, p. 01055, 2021, doi: 10.1051/e3sconf/202123301055.
+        </li>
+        <li>
+          M. Luo et al., ‘High-density thermal sensitivity maps of the human body’, Build. Environ., vol. 167, p. 106435, Jan. 2020, doi: 10.1016/j.buildenv.2019.106435.
+        </li>
+        <li>
+          P. R. Stauffer et al., ‘Non-Invasive Measurement of Brain Temperature with Microwave Radiometry: Demonstration in a Head Phantom and Clinical Case’, Neuroradiol. J., vol. 27, no. 1, pp. 3–12, Feb. 2014, doi: 10.15274/NRJ-2014-10001.
+        </li>
+        <li>
+          N. N. Graedel, J. R. Polimeni, B. Guerin, B. Gagoski, and L. L. Wald, ‘An anatomically realistic temperature phantom for radiofrequency heating measurements’, Magn. Reson. Med., vol. 73, no. 1, pp. 442–450, 2015, doi: 10.1002/mrm.25123.
+        </li>
+        <li>
+          L. Van den Bossche, W. Vertessen, J. Van den Bossche, O. Rudenko, J. Bogers, and L. Brancato, ‘A modular, human body-mimicking phantom with active thermoregulation capabilities for validation and verification of convective hyperthermia devices’, Int. J. Hyperthermia, vol. 41, no. 1, p. 2421873, Dec. 2024, doi: 10.1080/02656736.2024.2421873.
+        </li>
+        <li>
+          R. D. M. Packett, P. J. Brown, G. S. S. Popli, and F. Scott Gayzik, ‘Development and Validation of a Brain Phantom for Therapeutic Cooling Devices’, J. Biomech. Eng., vol. 139, no. 051007, Apr. 2017, doi: 10.1115/1.4036215.
+        </li>
+      </ol>
     </div>
   </div>
 
@@ -225,7 +545,7 @@
     <sl-icon name="arrow-up" label="Settings"></sl-icon>
   </sl-button>
 
-  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  
   <script type="module" src="./components/table-component/table-component.js"></script>
 </body>
 
